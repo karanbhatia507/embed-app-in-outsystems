@@ -1,0 +1,74 @@
+#reactroot {
+  height: 100vh;
+  border: 1px solid #a6a8af;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #2654b5;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
+
+.count {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.activity {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0;
+}
+
+button {
+  background: white;
+  padding: 4px 20px;
+  border-radius: 4px;
+  cursor: pointer
+}
+
+#incrementBtn {
+  color: #2654b5;
+  border: 2px solid #2654b5;
+}
+
+#resetBtn {
+  color: #c10649;
+  border: 2px solid #c10649;
+}
