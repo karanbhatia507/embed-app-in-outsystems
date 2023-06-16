@@ -14,7 +14,7 @@ const getDataFromOutsystems = (data) => {
 
 const passDataToOutsystems = (data) => {
   console.log('------------passDataToOutsystems from react-----------', data);
-  return data + 3;
+  return data + 'Data from React app';
 }
 
 reactroot.render(
