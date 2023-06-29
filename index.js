@@ -1,21 +1,20 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { store, persistor } from './src/redux/store';
-import { Provider } from 'react-redux';
-import App from './src/packages/messenger/App.js';
-import { PersistGate } from 'redux-persist/integration/react';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import App from "./src/packages/messenger/App.js";
+import { persistor, store } from "./src/redux/store";
 
-const container = document.getElementById('reactroot');
+const container = document.getElementById("reactroot");
 const reactroot = createRoot(container);
 
-const getDataFromOutsystems = (data) => {
-  console.log('------------getDataFromOutsystems in react-----------', data);
-}
+// const getDataFromOutsystems = (data) => {
+//   console.log("------------getDataFromOutsystems in react-----------", data);
+// };
 
-const passDataToOutsystems = (data) => {
-  console.log('------------passDataToOutsystems from react-----------', data);
-  return data + 'Data from React app';
-}
+// const passDataToOutsystems = (data) => {
+//   return data + "Data from React app";
+// };
 
 reactroot.render(
   <Provider store={store}>
@@ -24,6 +23,3 @@ reactroot.render(
     </PersistGate>
   </Provider>
 );
-
-window.getDataFromOutsystems = getDataFromOutsystems;
-window.passDataToOutsystems = passDataToOutsystems

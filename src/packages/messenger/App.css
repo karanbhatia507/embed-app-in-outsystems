@@ -72,3 +72,28 @@ button {
   color: #c10649;
   border: 2px solid #c10649;
 }
+
+.passData {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input {
+  color: #2654b5;
+  border: 2px solid #2654b5;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.sendDataBtn {
+  color: #2654b5;
+  border: 2px solid #2654b5;
+}
+
+.dataFromOutsystems {
+  color: #2654b5;
+  font-weight: 800;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
